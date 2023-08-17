@@ -1,0 +1,14 @@
+.wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 100vh;
+  border: solid 1px #80808047;
+  background-image: url("^assets/question-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  justify-content: flex-start;
+}

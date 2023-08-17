@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 100vh;
+  background-color: aliceblue;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+  justify-content: center;
+  cursor: pointer;
+}
+.success-msg {
+  background-image: url("^assets/success-msg.png");
+}
+.error-msg {
+  background-image: url("^assets/wrong-msg.png");
+}
+.timeout-msg {
+  background-image: url("^assets/time-out.png");
+}

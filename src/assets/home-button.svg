@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="361" height="126" viewBox="0 0 361 126">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.555" cy="0.5" r="0.989" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#451b66"/>
+      <stop offset="1" stop-color="#a01c59"/>
+    </radialGradient>
+    <filter id="Colour_BG" x="0" y="0" width="469.274" height="233.274" filterUnits="userSpaceOnUse">
+      <feOffset dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="14.5" result="blur"/>
+      <feFlood flood-color="#911b5c"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Component_33_1" data-name="Component 33 – 1">
+    <g transform="matrix(1, 0, 0, 1, -53.64, -46.64)" filter="url(#Colour_BG)" style="mix-blend-mode: lighten;isolation: isolate">
+      <rect id="Colour_BG-2" data-name="Colour BG" width="362" height="126" rx="35" transform="translate(53.64 46.64)" stroke="#c7c7c7" stroke-width="1" fill="url(#radial-gradient)"/>
+    </g>
+    <text id="ابدأ_الآن" data-name="ابدأ الآن" transform="translate(40 87)" fill="#fff" font-size="99" font-family="Hayah"><tspan x="0" y="0">ابدأ الآن</tspan></text>
+  </g>
+</svg>

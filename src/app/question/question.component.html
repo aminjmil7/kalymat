@@ -1,0 +1,84 @@
+<div class="wrapper">
+  <ng-container
+    *ngIf="questionsList[questionIndex].correctAnswer === selectdAnswer"
+  >
+    <div *ngFor="let num of numbers" class="confetti-{{ num }}"></div>
+  </ng-container>
+  <div class="countdown" *ngIf="bubbleClickable">
+    <svg viewBox="-50 -50 100 100" stroke-width="10">
+      <circle r="45"></circle>
+      <circle r="45" pathLength="1"></circle>
+    </svg>
+  </div>
+
+  <question-bubble
+    [question]="questionsList[questionIndex].description"
+  ></question-bubble>
+
+  <div class="row">
+    <div
+      class="shake-vertical"
+      [ngClass]="{
+        'bounce-out-top':
+          selectdAnswer === 0 &&
+          questionsList[questionIndex].correctAnswer === selectdAnswer,
+        'bounce-out-bottom':
+          selectdAnswer === 0 &&
+          questionsList[questionIndex].correctAnswer !== selectdAnswer
+      }"
+    >
+      <response-one
+        [response]="questionsList[questionIndex].options[0]"
+        (click)="checkAnswer(questionsList[questionIndex], 0)"
+      ></response-one>
+    </div>
+    <div
+      class="shake-vertical-1"
+      [ngClass]="{
+        'bounce-out-top':
+          selectdAnswer === 1 &&
+          questionsList[questionIndex].correctAnswer === selectdAnswer,
+        'bounce-out-bottom':
+          selectdAnswer === 1 &&
+          questionsList[questionIndex].correctAnswer !== selectdAnswer
+      }"
+    >
+      <response-two
+        [response]="questionsList[questionIndex].options[1]"
+        (click)="checkAnswer(questionsList[questionIndex], 1)"
+      ></response-two>
+    </div>
+    <div
+      class="shake-vertical-2"
+      [ngClass]="{
+        'bounce-out-top':
+          selectdAnswer === 2 &&
+          questionsList[questionIndex].correctAnswer === selectdAnswer,
+        'bounce-out-bottom':
+          selectdAnswer === 2 &&
+          questionsList[questionIndex].correctAnswer !== selectdAnswer
+      }"
+    >
+      <response-three
+        [response]="questionsList[questionIndex].options[2]"
+        (click)="checkAnswer(questionsList[questionIndex], 2)"
+      ></response-three>
+    </div>
+    <div
+      class="shake-vertical-3"
+      [ngClass]="{
+        'bounce-out-top':
+          selectdAnswer === 3 &&
+          questionsList[questionIndex].correctAnswer === selectdAnswer,
+        'bounce-out-bottom':
+          selectdAnswer === 3 &&
+          questionsList[questionIndex].correctAnswer !== selectdAnswer
+      }"
+    >
+      <response-four
+        [response]="questionsList[questionIndex].options[3]"
+        (click)="checkAnswer(questionsList[questionIndex], 3)"
+      ></response-four>
+    </div>
+  </div>
+</div>

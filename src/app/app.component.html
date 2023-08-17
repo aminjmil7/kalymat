@@ -1,0 +1,7 @@
+<app-home *ngIf="page === 0" (next)="nextPage($event)"></app-home>
+<app-question *ngIf="page === 1" (next)="nextPage($event)"></app-question>
+<app-result
+  *ngIf="page === 2"
+  [message]="message"
+  (click)="page = 0"
+></app-result>
