@@ -219,9 +219,9 @@ export class QuestionComponent {
   playAudio(type: string) {
     let audio = new Audio();
     if (type === "success") {
-      audio.src = "./assets/success.mp3";
+      audio.src = "/kalymat/assets/success.mp3";
     } else {
-      audio.src = "./assets/failure.mp3";
+      audio.src = "/kalymat/assets/failure.mp3";
     }
     audio.volume = 0.3;
     audio.load();
