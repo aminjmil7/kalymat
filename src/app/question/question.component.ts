@@ -108,12 +108,6 @@ export class QuestionComponent {
       level: "medium",
     },
     {
-      description: "ضد كلمة (مجتهد) ",
-      options: ["مُثابر", "مُهمل", "دَؤُوب", "مواظِب"],
-      correctAnswer: 1,
-      level: "medium",
-    },
-    {
       description: "مفرد كلمة (شهود) ",
       options: ["شهادة", "شاهد", "شهيد", "شهد"],
       correctAnswer: 1,
